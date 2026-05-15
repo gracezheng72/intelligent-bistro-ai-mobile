@@ -15,7 +15,7 @@ A mobile-first React Native (Expo) ordering app with a Node.js/Express backend. 
 - Node.js
 - Express
 - TypeScript
-- OpenRouter Llama model for natural language parsing
+- OpenRouter free model for natural language parsing
 - Local fallback parser for demo reliability
 
 ## Core Requirements Covered
@@ -219,28 +219,6 @@ EXPO_PUBLIC_API_BASE_URL=http://10.0.0.99:4000 npx expo start --tunnel
 
 The backend listens on `0.0.0.0`, so it can receive requests from your iPhone on the same network.
 
-## Demo Prompts
-
-Use these in the AI Assistant screen:
-
-```text
-Add two spicy chicken sandwiches and a Coke
-Remove the Coke
-Set chicken nuggets to 2
-Change spicy chicken sandwich to classic chicken sandwich
-Clear my cart
-```
-
-## Suggested 5-Minute Loom Flow
-
-1. **Project intro:** React Native Expo app + Node.js Express backend.
-2. **Home screen:** show mobile-first restaurant page and AI entry point.
-3. **Menu browsing:** search/filter menu, add items manually.
-4. **Cart:** show quantity update, remove item, subtotal/total.
-5. **AI Assistant:** type “Add two spicy chicken sandwiches and a Coke” and show the cart updating.
-6. **Code overview:** explain `mobile/App.tsx`, Zustand cart store, backend `/api/ai/parse-order`, OpenRouter/Llama parser, and fallback parser.
-7. **AI tools used:** mention using AI tools to accelerate UI generation, schema design, and debugging while manually reviewing state logic and backend validation.
-
 
 ## Expo Go compatibility
 
@@ -254,8 +232,7 @@ npx expo start
 ```
 
 
-
 ## Latest UI notes
 - Cart keeps a floating AI Assistant shortcut even after items are added.
 - OpenRouter default model is `openrouter/free` for better free-tier availability.
-- Menu images were updated so chicken sandwich, nuggets, and apple/orange juice use separate real-food images.
+
