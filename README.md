@@ -194,35 +194,18 @@ In Terminal 2:
 
 ```bash
 cd mobile
-npx expo start --tunnel
+npm install
+npx expo start -c
 ```
 
-Then open Expo Go on your iPhone and scan the QR code from the Expo terminal/browser page.
+Open Expo Go on your iPhone and scan the QR code shown in the terminal.
 
-If your phone cannot reach the backend, set the API base URL manually when starting Expo:
-
-```bash
-EXPO_PUBLIC_API_BASE_URL=http://YOUR_MAC_LOCAL_IP:4000 npx expo start --tunnel
-```
-
-Find your Mac local IP with:
-
-```bash
-ipconfig getifaddr en0
-```
-
-Example:
-
-```bash
-EXPO_PUBLIC_API_BASE_URL=http://10.0.0.99:4000 npx expo start --tunnel
-```
-
-The backend listens on `0.0.0.0`, so it can receive requests from your iPhone on the same network.
+Make sure your phone and computer are on the same Wi-Fi network. The Expo app connects to the Node.js backend for AI cart actions.
 
 
 ## Expo Go compatibility
 
-This mobile project is configured for Expo SDK 54 so it can run in the current iOS Expo Go app. If you previously installed dependencies under SDK 52, remove `mobile/node_modules` and `mobile/package-lock.json`, then reinstall inside `mobile`.
+Start the Expo mobile app from the `mobile` folder:
 
 ```bash
 cd mobile
