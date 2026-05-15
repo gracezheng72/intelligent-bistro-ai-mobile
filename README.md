@@ -194,7 +194,6 @@ In Terminal 2:
 
 ```bash
 cd mobile
-npm install
 npx expo start -c
 ```
 
