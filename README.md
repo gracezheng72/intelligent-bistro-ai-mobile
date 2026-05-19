@@ -2,6 +2,10 @@
 
 A mobile-first React Native (Expo) ordering app with a Node.js/Express backend. Users can browse a fast-food menu, manage a cart manually, or ask an AI assistant to update the cart with natural language.
 
+## Demo 
+
+- Demo video: [Watch the Loom walkthrough](https://www.loom.com/share/8541d6bb6c964a0294b2e1dd60284a34)
+
 ## Tech Stack
 
 ### Mobile
